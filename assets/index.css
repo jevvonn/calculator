@@ -1,0 +1,248 @@
+.theme1 {
+  --mainbg: hsl(222, 26%, 31%);
+  --darkmain: hsl(224, 36%, 15%);
+  --dark2main: hsl(223, 31%, 20%);
+  --colormain: hsl(221, 14%, 31%);
+  --shadowmain: #b2a295;
+  --mainkeys: #eae3db;
+  --equalbg: hsl(6, 63%, 50%);
+  --equalshadow: hsl(6, 70%, 34%);
+  --delbg: hsl(225, 21%, 49%);
+  --delshadow: hsl(224, 28%, 35%);
+  --resultcolor: white;
+  --delcolor: white;
+  --resetcolor: white;
+}
+
+.theme2 {
+  --mainbg: hsl(0, 0%, 90%);
+  --darkmain: hsl(0, 0%, 93%);
+  --dark2main: hsl(0, 5%, 81%);
+  --colormain: #36362b;
+  --shadowmain: #b2a295;
+  --mainkeys: #e5e4e0;
+  --equalbg: hsl(25, 98%, 40%);
+  --equalshadow: hsl(25, 99%, 27%);
+  --delbg: hsl(185, 42%, 37%);
+  --delshadow: hsl(185, 58%, 25%);
+  --resultcolor: #36362b;
+  --delcolor: white;
+  --resetcolor: white;
+}
+
+.theme3 {
+  --mainbg: hsl(268, 75%, 9%);
+  --darkmain: hsl(268, 71%, 12%);
+  --dark2main: hsl(268, 71%, 12%);
+  --colormain: hsl(52, 100%, 62%);
+  --shadowmain: hsl(290, 70%, 36%);
+  --mainkeys: hsl(268, 47%, 21%);
+  --equalbg: hsl(176, 100%, 44%);
+  --equalshadow: hsl(177, 92%, 70%);
+  --delbg: hsl(281, 89%, 26%);
+  --delshadow: hsl(285, 91%, 52%);
+  --resultcolor: hsl(52, 100%, 62%);
+  --delcolor: white;
+  --resetcolor: white;
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background-color: var(--mainbg);
+}
+
+.container {
+  width: 520px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  width: 100%;
+  color: var(--resultcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.result-box {
+  width: 100%;
+  background-color: var(--darkmain);
+  border-radius: 10px;
+  height: 90px;
+  line-height: 90px;
+  text-align: end;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: var(--resultcolor);
+  font-size: 30px;
+}
+
+.body-area {
+  width: 100%;
+  background-color: var(--dark2main);
+  border-radius: 10px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.head-body .delete {
+  background-color: var(--delbg);
+  box-shadow: 0 3px 2px var(--delshadow);
+  color: var(--delcolor);
+}
+
+.box {
+  color: var(--colormain);
+  width: 110px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--mainkeys);
+  cursor: pointer;
+  box-shadow: 0 3px 2px var(--shadowmain);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bottom-body {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box-bottom {
+  width: 230px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--colormain);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--mainkeys);
+  box-shadow: 0 3px 2px var(--shadowmain);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bottom-body .reset {
+  background-color: var(--delbg);
+  box-shadow: 0 3px 2px var(--delshadow);
+  color: var(--resetcolor);
+}
+
+.bottom-body .equal {
+  background-color: var(--equalbg);
+  box-shadow: 0 3px 2px var(--equalshadow);
+  color: var(--mainkeys);
+}
+
+.box:active {
+  box-shadow: 1px -2px 2px var(--shadowmain);
+}
+
+.box-bottom:active {
+  box-shadow: 1px -2px 2px var(--shadowmain);
+}
+
+.theme-area {
+  display: flex;
+  gap: 0 20px;
+}
+
+.theme-area .theme-text {
+  font-size: 10px;
+}
+
+.changer {
+  width: 60px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: var(--dark2main);
+  position: relative;
+}
+
+.change-num {
+  text-align: center;
+}
+
+.change-theme {
+  margin-right: 10px;
+}
+
+.changer .sign {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--equalbg);
+  top: 4px;
+  z-index: 2;
+  transition: 0.6s all;
+}
+
+.btn-change {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.changer .btn-1 {
+  left: 0;
+}
+.changer .btn-2 {
+  left: 20px;
+}
+.changer .btn-3 {
+  left: 40px;
+}
+
+.theme1 .sign {
+  left: 3px;
+}
+
+.theme2 .sign {
+  left: 20px;
+}
+
+.theme3 .sign {
+  left: 40px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 95%;
+  }
+}

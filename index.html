@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="theme1">
+    <div class="container">
+      <div class="head">
+        <h3>calc</h3>
+        <div class="theme-area">
+          <p class="theme-text">THEME</p>
+          <div class="change-theme">
+            <div class="change-num">1 2 3</div>
+            <div class="changer">
+              <div class="sign"></div>
+              <span class="btn-change btn-1" data-theme="theme1"></span>
+              <span class="btn-change btn-2" data-theme="theme2"></span>
+              <span class="btn-change btn-3" data-theme="theme3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result-box"></div>
+      <div class="body-area">
+        <div class="head-body">
+          <div class="box number" data-num="7">7</div>
+          <div class="box number" data-num="8">8</div>
+          <div class="box number" data-num="9">9</div>
+          <div class="box delete">DEL</div>
+          <div class="box number" data-num="4">4</div>
+          <div class="box number" data-num="5">5</div>
+          <div class="box number" data-num="6">6</div>
+          <div class="box operator" data-opt="+">+</div>
+          <div class="box number" data-num="1">1</div>
+          <div class="box number" data-num="2">2</div>
+          <div class="box number" data-num="3">3</div>
+          <div class="box operator" data-opt="-">-</div>
+          <div class="box dot" data-dot=".">.</div>
+          <div class="box number" data-num="0">0</div>
+          <div class="box operator" data-opt="/">/</div>
+          <div class="box operator" data-opt="*">x</div>
+        </div>
+        <div class="bottom-body">
+          <div class="box-bottom reset">C</div>
+          <div class="box-bottom equal">=</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
